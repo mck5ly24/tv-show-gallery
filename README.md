@@ -47,15 +47,15 @@ The main component file is `src/app.jsx`. The import in `main.jsx` uses the same
 - Credits TVmaze in the footer.
 - Uses React Router to navigate between the gallery and detail pages.
 
-## Reflection Draft
+## Reflection
 
-Edit this section so it reflects your own experience before submitting.
-
-The vanilla JavaScript version required me to find elements in the DOM, create cards, add text and links, and remove old results by hand. In React, I describe what each part should look like using components, and React updates the page when state changes. Breaking the interface into a search form, show list, cards, and detail page makes it easier to see what each part is responsible for. The controlled input also keeps the value in React state, so submitting a search can use that value directly. One harder part was deciding where each piece of state belongs and understanding when effects run, especially when Strict Mode runs effects twice during development. The query, submitted search term, results, and search status live in App because both the form and the gallery need them, and App remains mounted while navigating. Each card owns its cast state because it makes a separate request for its show. The detail page reads the ID from the URL and loads its own data, so it can work when opened directly. Testing the page helped me see how the components and API requests work together.
+For the previous assignment, I used vanilla JavaScript to create and update the show cards on the page. With React, I learned how components can split the page into smaller parts. Instead of manually updating the DOM, the page changes when the state changes. I found it helpful to have separate components for the search form, show list, cards, and detail page.
+One part that took more thought was figuring out where the state should go. The search input, search term, results, and request status are stored in `app.jsx` because the search form and show list both need that information. Each show card manages its own cast request and loading state.
+I also learned how React Router uses the show ID in the URL to load the correct detail page. I tested the search, the no-results message, and the detail page by refreshing it. Adding the poster images helped me practice handling missing data. The project gave me a better understanding of how React organizes an app compared with vanilla JavaScript.
 
 ## AI Assistance
 
-I used ChatGPT to help generate and simplify the components, API handling, CSS, and README. It also helped troubleshoot the Vite setup and update the app to use `fetch()` directly. I ran the app locally and tested the search, detail page, and images.
+I used ChatGPT to help create and revise the components, API requests, styling, and README. It also helped me troubleshoot the Vite setup and add show posters. I ran the project locally and tested its search, detail page, images, and production build.
 
 ## References
 
