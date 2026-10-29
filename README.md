@@ -55,7 +55,9 @@ I also learned how React Router uses the show ID in the URL to load the correct 
 
 ## AI Assistance
 
-I used ChatGPT to help create and revise the components, API requests, styling, and README. It also helped me troubleshoot the Vite setup and add show posters. I ran the project locally and tested its search, detail page, images, and production build.
+## AI Assistance
+
+I used ChatGPT mainly to help troubleshoot errors, understand how certain React features worked, and figure out issues with API requests and images not displaying. I also used it for suggestions on organizing my code and improving my README. I tested the project locally to make sure everything was working correctly.
 
 ## References
 
